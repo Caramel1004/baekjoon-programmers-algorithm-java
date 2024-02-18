@@ -15,7 +15,7 @@ class Solution {
 
     public int getRemainingNumberOfOne(int n) {
         int quotient = 0;
-        for(int index = 1; index < n; index++) {
+        for(int index = 3; index < n; index++) {
             if(n % index == 1) {
                 quotient = index;
                 break;
