@@ -4,3 +4,6 @@
 >백준 또는 프로그래머스에서 푼 코테 문제를 자동 커밋 푸쉬로 기록합니다.
 - #### language: Java
 
+### 백준 티어
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=tangent45)](https://solved.ac/tangent45)
+
