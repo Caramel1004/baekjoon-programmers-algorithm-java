@@ -7,6 +7,8 @@
 ### 백준 티어
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=tangent45)](https://solved.ac/tangent45)<br><br>
 
+### 프로그래머스 점수
+<img src="./2024.02 4주차 프로그래머스 점수.png" style="width: 350px;">
 
 ### 자바 주요 클래스 및 메소드 정리
 - 알고리즘 문제 풀면서 많이 사용한 클래스와 메소드를 정리하였습니다.
