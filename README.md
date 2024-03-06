@@ -9,7 +9,7 @@
 
 ### 프로그래머스 점수
 - ##### 2024.03.06 수
-<img src="./2024.03.06  수.png" style="width: 350px;">
+<img src="./2024.03.06수.png" style="width: 350px;">
 
 - ##### 2024.02.26 월
 <img src="./2024.02.26 월.png" style="width: 350px;">
