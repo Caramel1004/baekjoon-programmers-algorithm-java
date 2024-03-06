@@ -8,6 +8,9 @@
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=tangent45)](https://solved.ac/tangent45)<br><br>
 
 ### 프로그래머스 점수
+- ##### 2024.03.06 수
+<img src="./2024.03.06  수.png" style="width: 350px;">
+
 - ##### 2024.02.26 월
 <img src="./2024.02.26 월.png" style="width: 350px;">
 
