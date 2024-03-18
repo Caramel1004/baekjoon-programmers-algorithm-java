@@ -2,8 +2,15 @@ import java.util.stream.IntStream;
 
 class Solution {
     public int[] solution(int[] numbers) {
-        return IntStream.of(numbers)
-                .map(number -> number * 2)
-                .toArray();
+        
+        int[] newArr = new int[numbers.length];
+        int index = 0;
+        
+        for(int num : numbers) {
+            newArr[index] = numbers[index] * 2;
+            index++;
+        }
+        
+        return newArr;
     }
 }
