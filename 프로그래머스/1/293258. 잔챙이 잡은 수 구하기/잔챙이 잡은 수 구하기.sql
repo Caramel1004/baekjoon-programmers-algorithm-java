@@ -3,4 +3,4 @@ SELECT
 FROM
     FISH_INFO
 WHERE
-    length <= 10 OR length IS NULL
+    length IS NULL;
