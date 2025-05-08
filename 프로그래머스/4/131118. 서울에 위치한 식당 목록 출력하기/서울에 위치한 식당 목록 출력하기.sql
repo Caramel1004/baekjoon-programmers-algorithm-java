@@ -4,7 +4,7 @@ SELECT
     ri.food_type AS food_type,
     ri.favorites AS favorites,
     ri.address AS address,
-    COALESCE(ROUND(AVG(rr.review_score), 2)) AS score
+    COALESCE(ROUND(AVG(rr.review_score), 2), 0) AS score
 FROM
     REST_INFO ri
 INNER JOIN
