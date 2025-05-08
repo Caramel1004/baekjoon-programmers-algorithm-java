@@ -7,6 +7,7 @@ FROM (
     GROUP BY name
 ) AS sub;
 
+
 # 2. DISTINCT로 중복 제거
 SELECT 
     COUNT(DISTINCT(name)) AS count 
