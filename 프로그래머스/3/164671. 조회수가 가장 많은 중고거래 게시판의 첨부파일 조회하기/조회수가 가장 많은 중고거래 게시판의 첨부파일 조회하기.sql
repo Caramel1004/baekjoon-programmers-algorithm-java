@@ -13,4 +13,4 @@ WHERE
         LIMIT 1
     )
 ORDER BY
-    file_id DESC;
+    file_id DESC
