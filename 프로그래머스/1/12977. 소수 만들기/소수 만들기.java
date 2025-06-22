@@ -7,8 +7,8 @@ class Solution {
      */
     public int solution(int[] nums) {
         int caseNumber = 0;
-        int[] evens = Arrays.stream(nums).filter(num -> num % 2 == 0).sorted().toArray();
-        int[] odds = Arrays.stream(nums).filter(num -> num % 2 == 1).sorted().toArray();
+        int[] evens = Arrays.stream(nums).filter(num -> num % 2 == 0).toArray();
+        int[] odds = Arrays.stream(nums).filter(num -> num % 2 == 1).toArray();
         // 배열에 짝수만 존재하면 0 리턴
         if (isEmpty(odds)) {
             return 0;
