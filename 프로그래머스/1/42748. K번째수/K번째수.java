@@ -43,7 +43,7 @@ class Solution {
                     .stream(array)
                     .boxed()
                     .collect(Collectors.toList());
-            // 2. command[0] ~ command[1] sub => 문제에서는 1번째가 시작점이므로 리스트로 탐색할 떄, (n - 1) 번째로 시작 계산
+            // 2. command[0] ~ command[1] sub => 문제에서는 1번째가 시작점이므로 리스트로 탐색 시, (n - 1) 번째로 시작 계산
             List<Integer> subList = commandList
                     .subList(command[0] - 1, command[1])
                     .stream()
