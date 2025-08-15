@@ -44,7 +44,7 @@ class Solution {
          * 10010110 -> 10011001
          * 1111000 -> 10000111
          */
-        int[] nextBitPowers = bitPowers.clone();
+        int[] nextBitPowers = Arrays.copyOf(bitPowers, bitPowers.length);
         for (int idx = nextBitPowers.length - 1; idx > 0; idx--) {
             // n번째 비트가 왼쪽으로 쉬프트가 가능한 경우
             if (nextBitPowers[idx - 1] != nextBitPowers[idx] << 1) {
