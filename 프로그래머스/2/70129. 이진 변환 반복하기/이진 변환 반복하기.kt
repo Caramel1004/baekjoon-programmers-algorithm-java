@@ -1,6 +1,7 @@
 class Solution {
     fun solution(s: String): IntArray {
-        return firstSolution(s)
+        // return firstSolution(s)
+        return secondSolution(s)
     }
     
     private fun firstSolution(s: String): IntArray {
@@ -16,5 +17,17 @@ class Solution {
             trialCount++
         }
         return intArrayOf(trialCount, removedZeroCount)
+    }
+    
+    private fun secondSolution(s: String): IntArray {
+        val removedZerosCounts = mutableListOf<Int>()
+        val trialCounts = mutableListOf<Int>()
+        var keyword = s
+        while (keyword != "1") {
+            removedZerosCounts += keyword.count { it == '0' }
+            keyword = keyword.replace("0", "").length.toString(2)
+            trialCounts += 1
+        }
+        return intArrayOf(trialCounts.sum(), removedZerosCounts.sum())
     }
 }
