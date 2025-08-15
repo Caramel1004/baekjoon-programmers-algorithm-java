@@ -1,9 +1,10 @@
 class Solution {
     fun solution(s: String): IntArray {
-        // return firstSolution(s)
-        return secondSolution(s)
+        return firstSolution(s)
+        // return secondSolution(s)
     }
     
+    // 메모리: 64.9 MB, 시간: 30.72 ms
     private fun firstSolution(s: String): IntArray {
         var removedZeroCount = 0
         var trialCount = 0;
@@ -19,6 +20,7 @@ class Solution {
         return intArrayOf(trialCount, removedZeroCount)
     }
     
+    // 메모리: 65.9 MB, 시간: 38.24 ms
     private fun secondSolution(s: String): IntArray {
         val removedZerosCounts = mutableListOf<Int>()
         val trialCounts = mutableListOf<Int>()
