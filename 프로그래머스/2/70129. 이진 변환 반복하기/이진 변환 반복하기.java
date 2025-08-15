@@ -2,10 +2,11 @@ import java.util.Arrays;
 
 class Solution {
     public int[] solution(String s) {
-        return firstSolution(s);
-        // return secondSolution(s);
+        // return firstSolution(s);
+        return secondSolution(s);
     }
     
+    // 메모리: 108 MB, 시간: 51.12 ms
     private static int[] firstSolution(String str) {
         int removedZerosCount = 0;
         int trialCount = 0;
