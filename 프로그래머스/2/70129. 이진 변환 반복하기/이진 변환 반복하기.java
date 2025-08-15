@@ -46,6 +46,8 @@ class Solution {
         return new int[]{trialCount, removedZerosCount};
     }
     
+    // 메모리: 89.1 MB, 시간: 7.76 ms
+    // for문에서 배열 생성하는 코드 지양
     private static int[] thirdSolution(String str) {
         int removedZerosCount = 0;
         int trialCount = 0;
