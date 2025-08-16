@@ -43,15 +43,15 @@ class Solution {
             return 0;
         }
         // 문자열 순회하면서 큐에 맨 마지막 요소와 비교
-        ArrayDeque<Character> que = new ArrayDeque<>();
-        que.push(s.charAt(0));
+        ArrayDeque<Character> stack = new ArrayDeque<>();
+        stack.push(s.charAt(0));
         for(int idx = 1; idx < len; idx++) {
-            if(!que.isEmpty() && que.getFirst() == s.charAt(idx)) {
-                que.pop();
+            if(!stack.isEmpty() && stack.peek() == s.charAt(idx)) {
+                stack.pop();
             } else {
-                que.push(s.charAt(idx));
+                stack.push(s.charAt(idx));
             }
         }
-        return que.isEmpty() ? 1 : 0;
+        return stack.isEmpty() ? 1 : 0;
     }
 }
