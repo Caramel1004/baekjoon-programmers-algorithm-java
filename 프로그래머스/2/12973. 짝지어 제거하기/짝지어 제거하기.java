@@ -42,6 +42,7 @@ class Solution {
         if(len % 2 != 0) {
             return 0;
         }
+        
         // 문자열 순회하면서 큐에 맨 마지막 요소와 비교
         ArrayDeque<Character> stack = new ArrayDeque<>();
         stack.push(s.charAt(0));
