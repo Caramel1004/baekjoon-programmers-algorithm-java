@@ -2,6 +2,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.Arrays;
 import java.util.ArrayDeque;
+import java.lang.StringBuilder;
 
 class Solution {
     public int solution(String s) {
@@ -34,6 +35,19 @@ class Solution {
             }
         }
         return strs.isEmpty() ? 1 : 0;
+    }
+    
+    // 정확성: 통과, 효율성: 시간 초과
+    private static int thirdSolution(String s) {
+        StringBuilder sb = new StringBuilder();
+        sb.append(s);
+        for(int idx = 1; idx < sb.length(); idx++) {
+            if(sb.charAt(idx - 1) == sb.charAt(idx)) {
+                sb.delete(idx - 1, idx + 1);
+                idx = 0;
+            }
+        }
+        return sb.length() == 0 ? 1 : 0;
     }
     
     // 정확성: 통과, 효율성: 시간 통과
