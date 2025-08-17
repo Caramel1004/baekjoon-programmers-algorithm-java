@@ -51,6 +51,8 @@ class Solution {
      */
     // 메모리 통과, 시간 통과
     fun secondSolution(n: Int, left: Long, right: Long): IntArray {
+        // left, right가 Int 범위를 넘을 수가 있어서 식 계산 후 Int형으로 변환
+        // 만약 Int범위가 아닌데 Int형으로 변환을 시도할 경우 오버플로우
         val size = (right - left + 1).toInt()
         val arr = IntArray(size)
         for(i in left..right) {
