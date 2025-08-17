@@ -7,6 +7,6 @@
 - #### language: JS
 
 ### 백준 티어
-
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=tangent45)](https://solved.ac/tangent45)<br><br>
 
 
