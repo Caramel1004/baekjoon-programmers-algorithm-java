@@ -12,26 +12,28 @@ public class Main {
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
 
-        // 제공된 단어는 unique
-        Map<String, Integer> map = new HashMap<>();
+        // key-value에서 value를 사용하지 않아서 리팩토링
+        Set<String> set = new HashSet<>();
         for(int i = 0; i < n; i++){
-            map.put(br.readLine(), i);
+            set.add(br.readLine());
         }
 
         int count = 0;
         for(int i = 0; i < m; i++) {
             String word = br.readLine();
-            if (map.containsKey(word)) {
+            if (set.contains(word)) {
                 sb.append(word).append("\n");
                 count++;
             }
         }
 
-        String[] words = sb.toString().split("\n");
+        String[] words = sb.toString().split("\\n");
 
         Arrays.sort(words);
 
-        System.out.println(count);
-        Arrays.stream(words).forEach(System.out::println);
+        sb.delete(0, sb.length());
+        sb.append(count).append("\n");
+        Arrays.stream(words).forEach(s -> sb.append(s).append("\n"));
+        System.out.print(sb);
     }
 }
