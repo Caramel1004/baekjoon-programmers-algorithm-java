@@ -19,8 +19,8 @@ public class Main {
             if(num != 0) {
                 pq.offer(num);
             } else {
-                int max = pq.peek() == null ? 0 : pq.poll();
-                sb.append(max).append("\n");
+                int min = pq.peek() == null ? 0 : pq.poll();
+                sb.append(min).append("\n");
             }
         }
         System.out.println(sb);
