@@ -12,10 +12,13 @@ public class Main {
         int size = Integer.parseInt(st.nextToken());
         int tapeLength = Integer.parseInt(st.nextToken());
 
-        int[] nums = Arrays.stream(br.readLine().split(" "))
-                .mapToInt(Integer::parseInt)
-                .sorted()
-                .toArray();
+        st = new StringTokenizer(br.readLine());
+        int[] nums = new int[size];
+        for(int i = 0; i < size; i++) {
+            nums[i] = Integer.parseInt(st.nextToken());
+        }
+        
+        Arrays.sort(nums);
 
         int count = 0;
         for (int i = 0; i < size; i++) {
