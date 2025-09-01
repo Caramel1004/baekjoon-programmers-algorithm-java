@@ -11,7 +11,7 @@ fun main() {
     nums[2] = 2
     nums[3] = 4
 
-    for (i in 4..10000) {
+    for (i in 4..max) {
         nums[i] = nums[i - 1] + nums[i - 2] + nums[i - 3]
     }
 
