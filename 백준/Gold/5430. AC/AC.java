@@ -25,8 +25,7 @@ public class Main {
                 deque.addLast(Integer.parseInt(elements[j]));
             }
             try {
-                boolean isReversed = false;
-                boolean isError = false;
+                boolean isReversed = false; // 역순이니?
                 for (int j = 0; j < commandFunc.length(); j++) {
                     char command = commandFunc.charAt(j);
                     if (command == 'R') {
